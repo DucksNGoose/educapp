@@ -1,2 +1,17 @@
 # educapp
-Aquele app que vai te dizer o que fazer da sua vida enquanto você quer ir nas festinha, seu imaturo
+
+baixar [nodejs](https://nodejs.org/en/download/)
+
+
+para instalar as dependencias
+
+´´´
+npm install
+´´´
+
+para rodar o projeto
+
+´´´
+npm start 
+´´´
+
