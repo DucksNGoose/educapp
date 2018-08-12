@@ -14,4 +14,3 @@ para rodar o projeto
 ´´´
 npm start 
 ´´´
-

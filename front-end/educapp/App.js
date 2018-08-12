@@ -1,9 +1,14 @@
+'use strict'
 import {createStackNavigator} from 'react-navigation'
-import {Home} from './home'
+import Home from './home'
 
-export default createStackNavigator({
+const NavApp = createStackNavigator({
   Home: {screen: Home}
-})
+});
+
+export default NavApp; 
+// import React from 'react';
+// import { StyleSheet, Text, View } from 'react-native';
 
 // export default class App extends React.Component {
 //   render() {
