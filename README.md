@@ -1,4 +1,4 @@
-# educapp
+# Educapp
 
 ## Configurações
 
