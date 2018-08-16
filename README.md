@@ -1,4 +1,5 @@
-# Educapp - pra você que quer sua vida decidida enquanto vai pra festinha de colégio, seu preguiçoso
+# Educapp
+App pra decidir o resto da sua vida enquanto você vai pra festinha, seu preguiçoso
 
 ## Configurações
 
