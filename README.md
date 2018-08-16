@@ -1,4 +1,4 @@
-# Educapp
+# Educapp - pra você que quer sua vida decidida enquanto vai pra festinha de colégio, seu preguiçoso
 
 ## Configurações
 
