@@ -13,9 +13,16 @@ para rodar o projeto
 
 ```
 npm start 
-<<<<<<< HEAD
-´´´
-=======
 ```
 
->>>>>>> 88b350c058e37943c6268c2d45fbbf6722a296e8
+## Dicas para versionar o código usando o vs code
+
+1. Baixe o repositório a partir do git
+
+```
+git clone https://github.com/DucksNGoose/educapp.git
+```
+2. No vscode procure no canto inferior esquerdo da tela a palavra master, clique nela
+3. No centro superior da tela vai aparecer todas as branches disponíveis, e um item para a criação de uma nova branch
+4. Crie, ou selecione a sua
+5. Good Code :octocat:
