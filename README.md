@@ -17,6 +17,7 @@ npm start
 
 ## Dicas para versionar o código usando o vs code
 
+0. Baixe o [visual studio code ](https://code.visualstudio.com/download)
 1. Baixe o repositório a partir do git
 
 ```
