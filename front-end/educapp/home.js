@@ -9,15 +9,21 @@ export default class Home extends React.Component {
   _onButtonVocTestPress = () => {
       this.props.navigation.navigate('VocationalTest')
   }
+  _onButtonCursosPress = () => {
+    this.props.navigation.navigate('Curses')
+  }
 
+  _onButtonLivrosPress = () =>{
+    this.props.navigation.navigate('Livros')
+  } 
 
   render() {
     return (
       <View style={Viewstyles.container}>
         <Text style={Viewstyles.text}>EducApp - Um App Passatempo Educacional</Text>
         <Button onPress={this._onButtonVocTestPress} title="Teste Vocacional"/>
-        <Button onPress={()=>{}} title="Cursos"/>
-        <Button onPress={()=>{}} title="Livros e Pesquisa"/>        
+        <Button onPress={this._onButtonCursosPress} title="Cursos"/>
+        <Button onPress={this._onButtonLivrosPress} title="Livros e Pesquisa"/>        
       </View>
     );
   }
