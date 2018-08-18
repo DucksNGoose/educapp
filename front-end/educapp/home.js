@@ -5,26 +5,23 @@ export default class Home extends React.Component {
   static navigationOptions = {
     title: "EducApp - Learn U"
   }
+
+  _onButtonVocTestPress = () => {
+      this.props.navigation.navigate('VocationalTest')
+  }
+
+
   render() {
     return (
       <View style={Viewstyles.container}>
-        <Text style={textStyles.container}>EducApp - Um App Passatempo Educacional</Text>
-        <Button onPress={()=>{}} title="Teste Vocacional"/>
+        <Text style={Viewstyles.text}>EducApp - Um App Passatempo Educacional</Text>
+        <Button onPress={this._onButtonVocTestPress} title="Teste Vocacional"/>
         <Button onPress={()=>{}} title="Cursos"/>
         <Button onPress={()=>{}} title="Livros e Pesquisa"/>        
       </View>
     );
   }
 }
-
-const textStyles = StyleSheet.create({
-  container:{  
-    marginBottom: 20,
-    fontWeight: 'bold',
-    color: '#005678'
-  
-  },
-});
 
 const Viewstyles = StyleSheet.create({
   container: {
@@ -34,4 +31,11 @@ const Viewstyles = StyleSheet.create({
     flexDirection: 'column',    
     alignItems: 'center',
   },
+
+  text:{  
+    marginBottom: 20,
+    fontWeight: 'bold',
+    color: '#005678'
+  
+  }
 });
