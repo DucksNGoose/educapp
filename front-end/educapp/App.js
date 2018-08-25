@@ -1,15 +1,17 @@
 'use strict'
 import {createStackNavigator} from 'react-navigation'
-import Home from './home'
-import VocationalTest from './vocationalTest'
-import Curses from './cursos' 
-import Livros from './livros'
+import Home from './components/home'
+import VocationalTest from './components/homeTest'
+import Teste from './components/teste'
+import Curses from './components/cursos' 
+import Livros from './components/livros'
 
 const NavApp = createStackNavigator({
   Home: {screen: Home},
   VocationalTest: {screen: VocationalTest},
   Curses : {screen: Curses},
-  Livros : {screen: Livros}
+  Livros : {screen: Livros},
+  Teste : {screen: Teste}
 });
 
 export default NavApp; 
