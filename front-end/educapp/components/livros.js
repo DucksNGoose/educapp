@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Text, Button} from 'react-native-elements';
 
-export default class Curses extends React.Component {
+export default class Livros extends React.Component {
   static navigationOptions = {
     title: "EducApp - Learn U"
   }
@@ -9,8 +10,8 @@ export default class Curses extends React.Component {
   render() {
     return (
       <View style={Viewstyles.container}>
-        <Text style={textStyles.container}>EducApp - Um App Passatempo Educacional</Text>      
-        <Text>Você nem sabe oq quer fazer da vida e ainda quer ver carga suplementar, você é um otário</Text>
+           <Text style={{fontSize:19, alignSelf:'center'}}>Livros</Text>         
+           <Text style={{fontSize:15, alignSelf:'flex-start'}}>jumento</Text>
       </View>
     );
   }

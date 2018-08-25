@@ -1,17 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Text, Button} from 'react-native-elements';
 
-export default class VocationalTest extends React.Component {
+export default class Curses extends React.Component {
   static navigationOptions = {
     title: "EducApp - Learn U"
   }
-
+  
   render() {
     return (
       <View style={Viewstyles.container}>
-        <Text style={textStyles.container}>EducApp - Um App Passatempo Educacional</Text>      
-        <Text>Teste vocacional pra vc que não sabe oq fazer, seu imaturo</Text>
-        <Button onPress={()=>{}} title="Começar Teste"/>
+        <Text style={{fontSize:19, alignSelf:'center'}}>Cursos</Text>    
+        <Text style={{fontSize:15, alignSelf:'flex-start'}}>Você nem sabe oq quer fazer da vida e ainda quer ver carga suplementar, você é um otário</Text>
       </View>
     );
   }
