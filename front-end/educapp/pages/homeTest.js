@@ -4,7 +4,7 @@ import {Button, CheckBox, Divider} from 'react-native-elements';
 import {ViewStyles} from './../styles'
 export default class VocationalTest extends React.Component {
   static navigationOptions = {
-    title: "EducApp - Learn U"
+    title: "Teste Vocacional"
   }
   
   _onButtonStartTestPress = () =>{

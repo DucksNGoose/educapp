@@ -5,7 +5,7 @@ import {ViewStyles} from './../styles'
 
 export default class Livros extends React.Component {
   static navigationOptions = {
-    title: "EducApp - Learn U"
+    title: "Livros"
   }
   
   render() {

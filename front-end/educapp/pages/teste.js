@@ -9,7 +9,7 @@ export default class Teste extends React.Component{
         this.state = {isChecked: [false,false,false,false]}
     }
     static navigationOptions = {
-        title: "EducApp - Learn U"
+        title: "Teste"
       }
       
     _onButtonStartTestPress = () =>{

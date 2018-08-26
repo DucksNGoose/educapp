@@ -5,7 +5,7 @@ import {ViewStyles} from './../styles'
 
 export default class Home extends React.Component {
   static navigationOptions = {
-    title: "EducApp - Learn U"
+    title: "Learn U"
   }
 
   _onButtonVocTestPress = () => {
