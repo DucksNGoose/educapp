@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Text, Button} from 'react-native-elements';
+import { Text, Divider} from 'react-native-elements';
+import CustomCard from './../components/cards'
 
 export default class Curses extends React.Component {
   static navigationOptions = {
@@ -11,7 +12,15 @@ export default class Curses extends React.Component {
     return (
       <View style={Viewstyles.container}>
         <Text style={{fontSize:19, alignSelf:'center'}}>Cursos</Text>    
-        <Text style={{fontSize:15, alignSelf:'flex-start'}}>Você nem sabe oq quer fazer da vida e ainda quer ver carga suplementar, você é um otário</Text>
+        <Divider style={{height:5, backgroundColor:'blue'}}></Divider>
+        <Text style={{fontSize:10, alignSelf:'flex-start', fontWeight:'bold'}}>
+          Você nem sabe oq quer fazer da vida e ainda quer ver carga suplementar?
+        </Text>
+        <Text style={{fontSize:20, alignSelf:'center', fontWeight:'bold'}}>
+          Você é um otário!
+        </Text>
+        <Divider style={{height:5, backgroundColor:'blue'}}></Divider>
+        <CustomCard></CustomCard>
       </View>
     );
   }
