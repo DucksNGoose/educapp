@@ -27,9 +27,7 @@ export const ViewStyles = StyleSheet.create({
         color: '#005678'      
       },
       button:{
-        color:"000",
-        backfaceVisibility:"hidden",
-        backgroundColor: "#fff",
+        backgroundColor: "#4281ce",
         width: 300,
         height: 45,                      
         borderColor: "transparent",

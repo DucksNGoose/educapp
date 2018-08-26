@@ -23,21 +23,18 @@ export default class Home extends React.Component {
       <View style={ViewStyles.container}>
         <Text style={ViewStyles.pageTitle}>Home</Text>
         <Button 
-          // color="#96ebff"
           onPress={this._onButtonVocTestPress} 
           title="Teste Vocacional"
           style={{padding:2}} 
           buttonStyle={ViewStyles.button}
         />
-        <Button
-          // color="#96ebff" 
+        <Button 
           onPress={this._onButtonCursosPress} 
           title="Cursos"
           style={{padding:2}} 
           buttonStyle={ViewStyles.button}
         />
-        <Button
-          // color="#96ebff" 
+        <Button 
           onPress={this._onButtonLivrosPress} 
           title="Livros e Pesquisa"
           style={{padding:2}} 

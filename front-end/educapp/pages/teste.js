@@ -21,6 +21,7 @@ export default class Teste extends React.Component{
             <View style={ViewStyles.container}>
                 <Text h3>Se você matar um cara, você:</Text>
                 <CheckBox
+                    checkedColor='#4d94ea'
                     style={ViewStyles.checkBox}
                     title='Deixa na rua'
                     checkedIcon='dot-circle-o'
@@ -30,6 +31,7 @@ export default class Teste extends React.Component{
                         isChecked: [!this.state.isChecked[0],false,false,false]})}
                 />
                 <CheckBox
+                    checkedColor='#4d94ea'
                     style={ViewStyles.checkBox}
                     title='Joga no rio mais próximo'
                     checkedIcon='dot-circle-o'
@@ -40,6 +42,7 @@ export default class Teste extends React.Component{
                     })}
                 />
                 <CheckBox
+                    checkedColor='#4d94ea'
                     style={ViewStyles.checkBox}
                     title='Mutila o corpo e serve para o Cachorro/Mendigo mais próximo'
                     checkedIcon='dot-circle-o'
@@ -50,6 +53,7 @@ export default class Teste extends React.Component{
                     })}
                 />
                 <CheckBox
+                    checkedColor='#4d94ea'
                     style={ViewStyles.checkBox}
                     title='Cortar em pedaços e congelar em casa para a próxima feijoada'
                     checkedIcon='dot-circle-o'
