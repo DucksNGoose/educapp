@@ -2,7 +2,6 @@ import React from 'react';
 import { View } from 'react-native';
 import { Text, Button} from 'react-native-elements';
 import {ViewStyles} from './../styles'
-import Buttons from './../node_modules/react-native-elements/example/src/views/buttons_home'
 
 export default class Home extends React.Component {
   static navigationOptions = {
