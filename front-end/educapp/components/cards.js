@@ -1,4 +1,5 @@
 import {Card, Text, Button, Icon} from 'react-native-elements';
+import {Linking} from 'react-native'
 import React from 'react'
 
 export  default class CustomCard extends React.Component{
@@ -8,10 +9,14 @@ export  default class CustomCard extends React.Component{
                 title='Engenharia da Computação'
                 image={{uri:"https://www.acritica.com/uploads/opinion/image/5812/show_uninorte.JPG"}}>
                 <Text style={{marginBottom: 10}}>
-                    Se voce quiser um curso amplo que não tem nada para se aprofundar e vai te dar apenas conteúdo 
-                    superficial sobre a área, esse é seu curso! Seu raso!
+                    Se voce quiser um curso gigantesco que não vai te aprofundar em nada e vai te dar apenas conteúdo 
+                    introdutório sobre a área e sem nenhum peso se você tiver só ele como fonte de conhecimento, 
+                    fazendo de você uma pessoa mediocre, 
+                    esse é seu curso!
                 </Text>
+                <Text style={{fontWeight:'bold', alignSelf:'center', fontSize:20}}>Seu raso!</Text>
                 <Button
+                    onPress={() => Linking.openURL("https://www.fiap.com.br/graduacao/bacharelado/engenharia-de-computacao/")}
                     icon={<Icon name='code' color='#ffffff' />}
                     backgroundColor='#03A9F4'
                     buttonStyle={{

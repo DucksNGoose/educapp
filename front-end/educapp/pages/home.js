@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import { Text, Button} from 'react-native-elements';
+import {ViewStyles} from './../styles'
+import Buttons from './../node_modules/react-native-elements/example/src/views/buttons_home'
 
 export default class Home extends React.Component {
   static navigationOptions = {
@@ -17,70 +19,32 @@ export default class Home extends React.Component {
   _onButtonLivrosPress = () =>{
     this.props.navigation.navigate('Livros')
   } 
-
   render() {
     return (
-      <View style={Viewstyles.container}>
-        <Text style={{fontSize:19, alignSelf:'center'}}>Home</Text>
+      <View style={ViewStyles.container}>
+        <Text style={ViewStyles.pageTitle}>Home</Text>
         <Button 
+          // color="#96ebff"
           onPress={this._onButtonVocTestPress} 
           title="Teste Vocacional"
-          style={{padding:9}} 
-          buttonStyle={{
-            backgroundColor: "rgba(92, 99,216, 1)",
-            width: 300,
-            height: 40,                      
-            borderColor: "transparent",
-            borderWidth: 0,
-            borderRadius: 5,
-            alignSelf:'center'
-          }}
+          style={{padding:2}} 
+          buttonStyle={ViewStyles.button}
         />
-        <Button 
+        <Button
+          // color="#96ebff" 
           onPress={this._onButtonCursosPress} 
           title="Cursos"
-          style={{padding:9}} 
-          buttonStyle={{
-            backgroundColor: "rgba(92, 99,216, 1)",
-            width: 300,
-            height: 40,                      
-            borderColor: "transparent",
-            borderWidth: 0,
-            borderRadius: 5,
-            alignSelf:'center'
-          }}
+          style={{padding:2}} 
+          buttonStyle={ViewStyles.button}
         />
-        <Button 
+        <Button
+          // color="#96ebff" 
           onPress={this._onButtonLivrosPress} 
           title="Livros e Pesquisa"
-          style={{padding:9}} 
-          buttonStyle={{
-            backgroundColor: "rgba(92, 99,216, 1)",
-            width: 300,
-            height: 40,                      
-            borderColor: "transparent",
-            borderWidth: 0,
-            borderRadius: 5,
-            alignSelf:'center'
-          }}
+          style={{padding:2}} 
+          buttonStyle={ViewStyles.button}
         />        
       </View>
     );
   }
 }
-
-const Viewstyles = StyleSheet.create({
-  container: {
-    padding:10,
-    flex:1,    
-    backgroundColor: '#fff',   
-    flexDirection: 'column'
-  },
-
-  text:{  
-    marginBottom: 20,
-    fontWeight: 'bold',
-    color: '#005678'
-  
-  }
-});

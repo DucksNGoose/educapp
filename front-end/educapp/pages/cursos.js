@@ -1,46 +1,39 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Text, Divider} from 'react-native-elements';
+import {ViewStyles} from './../styles'
 import CustomCard from './../components/cards'
 
 export default class Curses extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {showText: true, fontSize: 20}
+
+    setInterval(() => {
+      this.setState(previousState => {
+        return { 
+          showText: !previousState.showText, 
+          fontSize: previousState.fontSize <= 47? previousState.fontSize+1 : 20 
+        };
+      });
+    }, 100);
+  }
   static navigationOptions = {
-    title: "EducApp - Learn U"
+    title: "Cursos"
   }
   
   render() {
+    let display = this.state.showText ? 'Você é um otário!' : ' ';
     return (
-      <View style={Viewstyles.container}>
-        <Text style={{fontSize:19, alignSelf:'center'}}>Cursos</Text>    
-        <Divider style={{height:5, backgroundColor:'blue'}}></Divider>
-        <Text style={{fontSize:10, alignSelf:'flex-start', fontWeight:'bold'}}>
+      <View style={ViewStyles.container}>    
+        <Text style={ViewStyles.subTitle}>
           Você nem sabe oq quer fazer da vida e ainda quer ver carga suplementar?
         </Text>
-        <Text style={{fontSize:20, alignSelf:'center', fontWeight:'bold'}}>
-          Você é um otário!
+        <Text style={{fontSize:this.state.fontSize, alignSelf:'center', fontWeight:'bold'}}>
+          {display}
         </Text>
-        <Divider style={{height:5, backgroundColor:'blue'}}></Divider>
         <CustomCard></CustomCard>
       </View>
     );
   }
 }
-
-const textStyles = StyleSheet.create({
-  container:{  
-    marginBottom: 20,
-    fontWeight: 'bold',
-    color: '#005678'
-  
-  },
-});
-
-const Viewstyles = StyleSheet.create({
-  container: {
-    flex:1,    
-    backgroundColor: '#fff',
-    alignItems: 'center',    
-    flexDirection: 'column',    
-    alignItems: 'center',
-  },
-});
