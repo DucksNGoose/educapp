@@ -9,12 +9,11 @@ export  default class CustomCard extends React.Component{
                 title='Engenharia da Computação'
                 image={{uri:"https://www.acritica.com/uploads/opinion/image/5812/show_uninorte.JPG"}}>
                 <Text style={{marginBottom: 10}}>
-                    Se voce quiser um curso gigantesco que não vai te aprofundar em nada e vai te dar apenas conteúdo 
+                    Um curso gigantesco que não vai te aprofundar em nada e vai te dar apenas conteúdo 
                     introdutório sobre a área e sem nenhum peso se você tiver só ele como fonte de conhecimento, 
-                    fazendo de você uma pessoa mediocre, 
-                    esse é seu curso!
+                    fazendo de você uma pessoa mediocre!
                 </Text>
-                <Text style={{fontWeight:'bold', alignSelf:'center', fontSize:20}}>Seu raso!</Text>
+                <Text style={{fontWeight:'bold', alignSelf:'center', fontSize:15}}>Você não precisa fazer se não quiser</Text>
                 <Button
                     onPress={() => Linking.openURL("https://www.fiap.com.br/graduacao/bacharelado/engenharia-de-computacao/")}
                     icon={<Icon name='code' color='#ffffff' />}

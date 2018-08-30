@@ -12,23 +12,19 @@ export default class Curses extends React.Component {
     setInterval(() => {
       this.setState(previousState => {
         return { 
-          showText: !previousState.showText, 
-          fontSize: previousState.fontSize <= 47? previousState.fontSize+1 : 20 
+          showText: !previousState.showText          
         };
       });
-    }, 100);
+    }, 300);
   }
   static navigationOptions = {
     title: "Cursos"
   }
   
   render() {
-    let display = this.state.showText ? 'Você é um otário!' : ' ';
+    let display = this.state.showText ? 'Faculdade é dispensável!' : 'Faculdade é superficial';
     return (
       <View style={ViewStyles.container}>    
-        <Text style={ViewStyles.subTitle}>
-          Você nem sabe oq quer fazer da vida e ainda quer ver carga suplementar?
-        </Text>
         <Text style={{fontSize:this.state.fontSize, alignSelf:'center', fontWeight:'bold'}}>
           {display}
         </Text>
