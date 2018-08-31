@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Text, Divider} from 'react-native-elements';
-import {ViewStyles} from './../styles'
+import {ViewStyles} from './../bundle/styles'
 import CustomCard from './../components/cards'
 
 export default class Curses extends React.Component {

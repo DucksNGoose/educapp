@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Button, CheckBox, Divider} from 'react-native-elements';
-import {ViewStyles} from './../styles'
+import {ViewStyles} from './../bundle/styles'
 export default class VocationalTest extends React.Component {
   static navigationOptions = {
     title: "Teste Vocacional"

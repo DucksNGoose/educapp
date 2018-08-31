@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import {CheckBox, Text, Button} from 'react-native-elements';
-import {ViewStyles} from './../styles'
+import {ViewStyles} from './../bundle/styles'
 
 export default class Teste extends React.Component{
     constructor(props){
