@@ -9,35 +9,34 @@ export default class Home extends React.Component {
   }
 
   static navigationOptions = {
-    title: "Learn U"
+    title: "Socratic"
   }
 
   _onButtonVocTestPress = () => {
-      this.props.navigation.navigate('VocationalTest')
+      this.props.navigation.navigate('Teste')
   }
   _onButtonCursosPress = () => {
-    this.props.navigation.navigate('Curses')
+    this.props.navigation.navigate('Eventos')
   }
-
-  _onButtonLivrosPress = () =>{
-    this.props.navigation.navigate('Livros')
-  } 
 
   footer = {obj: [
     {
-      icon:"film", 
-      name:"Referencia", 
+      icon:"md-calendar", 
+      badge:"3",
+      name:"Eventos", 
       func: this._onButtonCursosPress
     },
     {
-      icon:"flask", 
+      icon:"flask",
+      badge:"1", 
       name:"Teste", 
       func: this._onButtonVocTestPress
     },
     {
       icon:"person", 
+      badge:"1",
       name:"Perfil", 
-      func: this._onButtonLivrosPress
+      func: this._onButtonCursosPress
     }
   ]}
 
@@ -45,17 +44,7 @@ export default class Home extends React.Component {
     return (
       <Container>
         <Content>
-          <DefaultFeed dataFeed={{
-            user:{
-                name: 'Henrique Alves',
-                image: 
-                'https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.0-9/15170876_1095317807248414_2191708399766728705_n.jpg?_nc_cat=0&oh=4377495847f9cb337659cc4311bbb428&oe=5C32082D',
-                ocupation:"Open Source Activist" 
-            },
-            post:{
-                image:'https://antivigilancia.org/wordpress/wp-content/uploads/2016/02/cryptorave-1024x512.png'
-            }
-          }}></DefaultFeed>
+          <DefaultFeed></DefaultFeed>
         </Content>
         <FixedFooter 
           buttonProps={this.footer}

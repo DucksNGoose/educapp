@@ -1,5 +1,5 @@
 import React from 'react'
-import {Footer, FooterTab, Button, Icon, Text} from 'native-base'
+import {Footer, FooterTab, Button, Icon, Text, Badge} from 'native-base'
 
 export default class FixedFooter extends React.Component {
     constructor(props){
@@ -13,7 +13,8 @@ export default class FixedFooter extends React.Component {
             <FooterTab>            
                 {this.buttonProps.map(
                     (element, index) =>
-                        <Button key={index} vertical={true} onPress={element.func}>
+                        <Button badge vertical key={index} vertical={true} onPress={element.func}>
+                            <Badge><Text>{element.badge}</Text></Badge>                            
                             <Icon name={element.icon}/>
                             <Text>{element.name}</Text>
                         </Button>

@@ -26,16 +26,17 @@ export default class BaseCard extends React.Component{
                     <Left>
                         <Button transparent>
                             <Icon active name="thumbs-up" />
-                            <Text>120</Text>
+                            {/*Sua vida é maior do que as curtidas que voce tem, por enquanto fica mockado*/}
+                            <Text>120</Text> 
                         </Button>
                     </Left>
                     <Body>
                         <Button transparent>
-                            <Icon active name="chatbubbles" />
+                            <Icon active name="chatbubbles" />                            
                             <Text>4</Text>
                         </Button>
                     </Body>
-                    <Right>
+                    <Right>                        
                         <Text>11h ago</Text>
                     </Right>
                 </CardItem>
